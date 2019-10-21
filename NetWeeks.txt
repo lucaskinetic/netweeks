@@ -1,0 +1,61 @@
+Cuentas personales
+- Billetera (Efectivo)
+- Dólares (Efectivo)
+- Banco X
+	- Cuenta en pesos.
+	- Cuenta en dólares.
+- Banco Y
+	- Cuenta en pesos.
+
+Ingresos:
+	- Monto
+	- Fecha
+	- Observacion
+
+Gastos
+	- Monto
+	- Fecha
+	- Observacion
+
+Transferencias
+	- Internas
+		- Cuenta origen
+		- Cuenta destino
+
+Modelo 1: Separando las entidades
+Ventajas del primer modelo:
+	- Modularizada la entidad: Mantengo coherencia de los datos.
+	- Atomizamos los errores: Evitamos borrar datos de otra entidad interna por error.
+	- Legible: Es más fácil de leer la BD.
+	- Documentación: Más fácil de documentar la BD.
+Desventajas:
+	- Pérdida de almacenamiento: Debido a la repetición de campos.
+	- Nueva entidad con campos similares: Crear columnas, triggers, sps, restricciones de nuevo.
+	- Cantidad de tablas: Aumenta considerablemente la cantidad de tablas.
+
+Modelo 2: Unificando entidades
+Ventajas:
+	- Centralización de los datos: Todas las entidades estan concentradas en una sola tabla.
+	- Mejora en el almacenamiento: Al estar todo en una sola tabla, lo único que se va agregando es la información propia de los registros.
+	- Reducción de tablas: Menor cantidad de tablas.
+Desventajas:
+	- Complejizamos la documentación.
+	- Menos legible la BD.
+	- Potencialmente más propenso a errores.
+	- Más complejo de programar: Debido a meter lógica de negocio en la BD.
+
+Resumen:
+	- Modelo 1: 
+		- Cuando no tengamos problemas de almacenamiento.
+		- Tenemos tiempo a favor.
+		- Cuando no tengamos bien en claro las reglas del negocio.
+	- Modelo 2:
+		- Cuando tenemos problemas de almacenamiento.
+		- Tenemos que entregar una funcionalidad rápido.
+		- Cuando los índices se realizan a través de los mismos campos.
+
+Tabla Movimientos
+Esta tabla almacena los registros asociados a: Gastos, Ingresos, Transferencias, etc.
+Si es un gasto o ingreso:
+	- Columna id_cuenta_origen: Es nulo debido a que no tiene asociado una cuenta de origen.
+	- Columna autorizada:	- 
