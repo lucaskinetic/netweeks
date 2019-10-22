@@ -1,0 +1,9 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#Java files
+*.class
+**/lib
+*.jar
+**/classes
