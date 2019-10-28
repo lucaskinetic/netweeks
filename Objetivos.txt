@@ -1,0 +1,5 @@
+Objetivos: 
+ - Introducción a Bases de Datos.
+ - Diseño y Modelado de Bases de Datos.
+ - Buenas prácticas 
+ - OLTP vs OLAP

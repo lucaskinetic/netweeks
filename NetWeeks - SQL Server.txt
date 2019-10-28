@@ -1,0 +1,8 @@
+--Saber todas las columnas
+SELECT * FROM SYS.all_columns;
+
+--Saber todas las tablas
+SELECT * from sys.all_objects where type_desc = 'USER_TABLE';
+
+--Conocer columnas de una tabla en particular
+SELECT * FROM sys.all_columns where object_id = 8920395
