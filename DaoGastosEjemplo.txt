@@ -1,0 +1,22 @@
+class DaoGastos{
+	
+	public void insertar(){
+		Ps = conexion.crearPS("INSERT INTO MOVIMIENTOS...");
+		//establecemos los valores...
+			fecha 
+			monto
+			observacion
+			cuenta
+			tipodemovimiento
+		*/
+		ps.execute();
+	}
+
+}
+
+
+INSERT INTO INGRESOS (FECHA, MONTO, OBSERVACION, ID_CUENTA) VALUES ('2019-10-31', 500.30, "Salario Octubre", 1);
+INSERT INTO GASTOS (FECHA, MONTO, OBSERVACION, ID_CUENTA) VALUES ('2019-10-31', 500.30, "Salario Octubre", 1);
+
+INSERT INTO MOVIMIENTOS (FECHA, MONTO, OBSERVACION, ID_CUENTA, ID_TIPO_MOVIMIENTO) VALUES ('2019-10-31', 500.30, "Salario Octubre", 1, 1);
+INSERT INTO MOVIMIENTOS (FECHA, MONTO, OBSERVACION, ID_CUENTA, ID_TIPO_MOVIMIENTO) VALUES ('2019-10-31', 500.30, "Salario Octubre", 1, 2);

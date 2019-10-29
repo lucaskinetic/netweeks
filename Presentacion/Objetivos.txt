@@ -1,0 +1,6 @@
+Objetivos: 
+ - Introducción a Bases de Datos.
+ - Sistemas OLTP y OLAP.
+ - Proceso de Modelado de Bases de Datos.
+ - Procesos ETL y ELT.
+ - Malas y Buenas prácticas.

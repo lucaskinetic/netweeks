@@ -8,14 +8,22 @@ Cuentas personales
 	- Cuenta en pesos.
 
 Ingresos:
+	- Cuenta
 	- Monto
 	- Fecha
 	- Observacion
+	- Campo opcional: 
+			- Fue un regalo?
+			- Salario
 
 Gastos
+	- Cuenta
 	- Monto
 	- Fecha
 	- Observacion
+	- Campo opcional: 
+			- Es un gasto que se repite?
+			- Fue realizado?
 
 Transferencias
 	- Internas
